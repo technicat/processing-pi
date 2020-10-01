@@ -24,5 +24,5 @@ void setup() {
 void draw() {
   fill(0,255,255);
   textFont(f,24);
-  text("pi = ",10,25);
+  text(pi(),10,25);
 }
