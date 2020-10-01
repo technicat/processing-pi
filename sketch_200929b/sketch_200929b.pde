@@ -1,4 +1,15 @@
    
+int total = 0;
+int inside = 0;
+
+float pi() {
+  if (total == 0) {
+    return 0;
+  } else {
+  return inside/total *4;
+  }
+}
+  
 
 void setup() {
   size(640,640);
