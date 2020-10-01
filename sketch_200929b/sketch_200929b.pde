@@ -16,15 +16,12 @@ float pi() {
 
 void setup() {
   size(640,640);
+  background(0);
   ellipse(radius/2,radius/2,radius,radius);
   f = createFont("Arial",16,true);
 }
 
 void draw() {
-  if (mousePressed) {
-    fill(0);
-  } else {
-    fill(255);
-  }
-  ellipse(mouseX, mouseY, 80, 80);
+  textFont(f,24);
+  text("pi = ",10,20);
 }
