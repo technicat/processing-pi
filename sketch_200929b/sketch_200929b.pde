@@ -1,7 +1,7 @@
    
 
 void setup() {
-  size(640,480);
+  size(640,640);
   rectMode(CENTER);
 rect(100,100,20,100);
 ellipse(100,70,60,60);
