@@ -1,7 +1,7 @@
    
-int total = 0;
-int inside = 0;
-int radius = 640;
+float total = 0.0;
+float inside = 0.0;
+float radius = 640.0;
 
 PFont f;
 
@@ -22,7 +22,15 @@ void setup() {
 }
 
 void draw() {
+  float x = random(-radius,radius);
+  float y = random(-radius,radius);
+  total = total +1;
+  if (x*x+y*y < radius*radius) {
+    inside = inside+1;
+  }
   fill(0,255,255);
+  ellipse(x,y,5,5);
+  fill(255,255,0);
   textFont(f,24);
   text(pi(),10,25);
 }
