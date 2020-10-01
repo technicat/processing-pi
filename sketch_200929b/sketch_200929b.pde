@@ -28,6 +28,8 @@ void draw() {
   if (x*x+y*y < radius*radius) {
     inside = inside+1;
   }
+  fill(0);
+  rect(0,0,100,40);
   fill(0,255,255);
   ellipse(x,y,5,5);
   fill(255,255,0);
