@@ -29,10 +29,11 @@ void draw() {
     inside = inside+1;
   }
   fill(0);
-  rect(0,0,100,40);
+  rect(0,0,120,40);
   fill(0,255,255);
   ellipse(x,y,5,5);
   fill(255,255,0);
   textFont(f,24);
-  text(pi(),10,25);
+  text("pi = ",10,25);
+  text(pi(),50,25);
 }
