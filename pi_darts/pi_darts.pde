@@ -1,16 +1,16 @@
 // calculate pi by throwing darts at a circle
 
-float total = 0.0;
-float inside = 0.0;
+int count = 0;
+int inside = 0;
 float radius = 320.0;
 
 PFont f;
 
 float pi() {
-  if (total == 0) {
-    return 0;
+  if (count == 0) {
+    return 0.0;
   } else {
-    return inside/total *4;
+    return (float)inside/(float)count *4.0;
   }
 }
   
@@ -23,7 +23,7 @@ void setup() {
 }
 
 void draw() {
-  total = total +1;
+  count++;
   drawDot();
   drawText();
 }
@@ -32,7 +32,7 @@ void drawDot() {
   float x = random(-radius,radius);
   float y = random(-radius,radius);
   if (x*x+y*y < radius*radius) {
-    inside = inside+1;
+    inside++;
   }
   ellipse(x+radius,y+radius,5,5);
 }
