@@ -40,7 +40,6 @@ void drawDot() {
 void drawText() {
   fill(0);
   rect(0,0,120,40);
-  fill(0,255,255);
   fill(255,255,0);
   textFont(f,24);
   text("pi = ",10,25);
