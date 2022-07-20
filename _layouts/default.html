@@ -10,25 +10,26 @@
   <!--[if lt IE 9]>
     <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
     <![endif]-->
-  <a href="{{ site.github.repository_url }}"><img alt="Github" src="/images/ionicons/svg/logo-octocat.svg"
-      height="40"></a>
-  {% if site.show_downloads %}
-  <a href="{{ site.github.releases_url }}"><img alt="Github" src="/images/ionicons/svg/download-outline.svg"
-      height="40"></a>
-  {% endif %}
 </head>
 
 <body>
   <div class="wrapper">
     <header>
+      <h1>{{ site.title | default: site.github.repository_name }}</h1>
+
       {% if site.logo %}
       <a href="http://technicat.com/"><img src="{{site.logo | relative_url}}" alt="Technicat" /></a><br />
       {% endif %}
+      <a href="https://www.amazon.com/Technicat-Software-Philip-Chu/dp/1082483958"><img alt="Amazon"
+        src="/images/ionicons/svg/logo-amazon.svg" height="40"></a>
       <a href="{{ site.github.repository_url }}"><img alt="Github" src="/images/ionicons/svg/logo-octocat.svg"
           height="40"></a>
       {% if site.show_downloads %}
       <a href="{{ site.github.releases_url }}"><img alt="Github" src="/images/ionicons/svg/download-outline.svg"
           height="40"></a>
+      {% endif %}
+      <p />
+      <p>{{ site.description | default: site.github.project_tagline }}</p>
     </header>
 
     <section>
@@ -43,7 +44,8 @@
           Owned and operated by <a href="http://philipchu.com/">Phil Chu</a><br />
           Technicat logo by <a href="http://espressyourself.coffee">Dakota Snow</a><br />
           Icons from <a href="http://ionicons.com/">Ionicons</a><br />
-          Hosted on GitHub Pages &mdash; Theme by <a href="https://github.com/orderedlist">orderedlist</a><br />
+          Hosted on GitHub Pages &mdash; Adapted from the <a href="https://github.com/pages-themes/minimal">Minimal</a>
+          theme by <a href="https://github.com/orderedlist">orderedlist</a><br />
         </small></p>
     </footer>
   </div>
