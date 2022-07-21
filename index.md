@@ -1,3 +1,9 @@
+Calculate pi by throwing darts
+
+![pi darts](/images/pi/pidarts.png)
+
+or to save time, just cut-and-paste however many digits you want
+
 3.141592653589793238462643383279
 50288419716939937510582097494459
 23078164062862089986280348253421
